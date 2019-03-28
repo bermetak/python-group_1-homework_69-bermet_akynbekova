@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
+import './Display.css';
 
 
 class Display extends Component {
@@ -8,7 +9,7 @@ class Display extends Component {
         return (
             <div className="Display border border-primary ">
                 <h1>{input}</h1>
-                <h1>{result === null ? '' : result} </h1>
+                <h3>{result === null ? '' : result} </h3>
             </div>
         );
     }

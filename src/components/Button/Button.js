@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react";
-
+import './Button.css';
 import {connect} from "react-redux";
 
 
@@ -17,10 +17,10 @@ class Button extends Component {
 
 
                     </div>
-                <button className='btn btn-danger' onClick={this.props.removeFromInput}>
+                <button className='my_btn btn btn-danger' onClick={this.props.removeFromInput}>
                     {'<'}
                 </button>
-                <button className='btn btn-success' onClick={this.props.calculateInput}>
+                <button className='my_btn btn btn-success' onClick={this.props.calculateInput}>
                     {'='}
                 </button>
 </div>
